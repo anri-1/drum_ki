@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">chtoto</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">malahov</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">lya-minor</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">perehod</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">si-minor</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">perezvon</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">klarnet</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">klarnet-odinochnyiy</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="korotkaya-melodiya.wav"></audio>
+  <audio data-key="83" src="malahov-plyus-korotkaya-melodiya-25313.wav"></audio>
+  <audio data-key="68" src="Sound_99257100 1667732080.mp3"></audio>
+  <audio data-key="70" src="gitara-akkord-lya-minor-am.wav"></audio>
+  <audio data-key="71" src="perehodnaya-gitara-gitara-perehodnaya-muzyika-43406.wav"></audio>
+  <audio data-key="72" src="gitara-akkord-si-minor-b.wav"></audio>
+  <audio data-key="74" src="dram-rim-shot-perezvon.wav"></audio>
+  <audio data-key="75" src="klarnet-melodiya-perezvon.wav"></audio>
+  <audio data-key="76" src="klarnet-odinochnyiy-ugasayuschiy.wav"></audio>
+
+  <style>
+    html {
+  font-size: 10px;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: blue;
+  box-shadow: 0 0 1rem blue;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+ 
+  color: blue;
+}
+
+</style>
+
+<script src="script.js"></script>    
+</body>
+</html>
